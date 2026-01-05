@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Developer Portfolio | Kevin Vasilescu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">KV</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to My Portfolio</h1>
+            <p class="hero-subtitle">Full-Stack Developer | AI/ML Enthusiast | Creative Designer</p>
+            <button class="cta-button" onclick="scrollToSection('projects')">Explore My Work</button>
+        </div>
+        <div class="hero-animation"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate computer science student with expertise in data analytics, AI/ML, and web development. I love building innovative solutions that solve real-world problems.</p>
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Data Analytics</span>
+                    <span class="skill-tag">Web Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">📊</div>
+                <h3>Data Analytics Dashboard</h3>
+                <p>Interactive dashboard for visualizing complex data patterns using D3.js and Python backend.</p>
+                <div class="project-tags">Python • D3.js • Flask</div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">🤖</div>
+                <h3>AI Chat Assistant</h3>
+                <p>Smart chatbot powered by machine learning with natural language processing capabilities.</p>
+                <div class="project-tags">TensorFlow • NLP • React</div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">🎮</div>
+                <h3>2D Game Engine</h3>
+                <p>Lightweight game engine built with JavaScript featuring physics and collision detection.</p>
+                <div class="project-tags">JavaScript • Canvas • Game Dev</div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">🌐</div>
+                <h3>E-commerce Platform</h3>
+                <p>Full-stack web application with payment integration and user authentication.</p>
+                <div class="project-tags">React • Node.js • MongoDB</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Kevin Vasilescu. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">GitHub</a> | <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
